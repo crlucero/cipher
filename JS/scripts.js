@@ -1,32 +1,39 @@
-var str = prompt("Enter sentence: ");
+$(function (){
 
-var str2 = function (str) {
-    var first = str.charAt(0);
-    var last = str.charAt(str.length-1);
-    return (last + first).toUpperCase();
-};
+$('p').click(function(){
+    alert("Click image below");
+}); 
 
-var str3 = function (str) {
-    var divide = str.length/2;
-    var letter = str.charAt(divide);
-    return letter;
-};
+$('img').click(function(){
+    alert("This is an image");
+}); 
 
-var newName = str3(str) + str + str2(str);
-
-var str4 = str3(str) + str + str2(str);
-str4 = str4.split("");
-str4 = str4.reverse();
-str4 = str4.join("");
-
-alert(str4);
+});
 
 
 
+//var str = prompt("Enter sentence: ");
 
+//var str2 = function (str) {
+   // var first = str.charAt(0);
+  //  var last = str.charAt(str.length-1);
+   // return (last + first).toUpperCase();
+//};
 
+//var str3 = function (str) {
+  //  var divide = str.length/2;
+    //var letter = str.charAt(divide);
+  //  return letter;
+//};
 
+//var newName = str3(str) + str + str2(str);
 
+//var str4 = str3(str) + str + str2(str);
+//str4 = str4.split("");
+//str4 = str4.reverse();
+//str4 = str4.join("");
+
+//alert(str4);//
 
 
  //var reverse = function () {
